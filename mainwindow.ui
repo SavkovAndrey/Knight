@@ -257,8 +257,8 @@
      <property name="font">
       <font>
        <pointsize>8</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <bold>false</bold>
       </font>
      </property>
     </item>
@@ -443,8 +443,8 @@
      <property name="font">
       <font>
        <pointsize>8</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <bold>false</bold>
       </font>
      </property>
     </item>
