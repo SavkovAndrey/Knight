@@ -10,10 +10,12 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    vassal.cpp
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    vassal.h
 
 FORMS += \
     mainwindow.ui

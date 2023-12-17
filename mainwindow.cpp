@@ -21,26 +21,23 @@ MainWindow::~MainWindow()
 void MainWindow::on_pushButton_clicked()
 {
     QString temp;
-       QTableWidgetItem *item = new QTableWidgetItem();
-      // QTableWidgetItem *item;
-    item = ui->tableWidget->item(0, 0);
+    QTableWidgetItem *item;
 
-    if(item)
+    item = ui->tableWidget->item(0, 0);      //указываем с какой клеткой работаем
+    if(item)                                 // если она существует
     {
-    temp = item->text();
+    temp = item->text();                     // сохраняем ее данные во вр. переменную
     }
-/*
-    item = ui->tableWidget->item(2, 0);
-    if(item)
+
+    item = ui->tableWidget->item(2, 0);      // указываем с какой работаем дальше
+    if(item)                                 // если она существует
     {
-        item->setText(temp);
+        item->setText(temp);                 // устанавливаем в нее текст
     }
-    else
+    else                                     // если ее не существует
     {
-         ui->tableWidget->setItem(2, 0, new QTableWidgetItem(temp));
-    }
-*/
-       ui->tableWidget->setItem(2, 0, item);
+         ui->tableWidget->setItem(2, 0, new QTableWidgetItem(temp));  // создаем новые item для нее
+    }                                                                 // и записываем в него текст
       ui->label_7->setText(temp);
 
 }
