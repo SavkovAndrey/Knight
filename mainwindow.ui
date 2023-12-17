@@ -252,7 +252,7 @@
     </column>
     <item row="0" column="0">
      <property name="text">
-      <string>0</string>
+      <string>11</string>
      </property>
      <property name="font">
       <font>
@@ -264,32 +264,32 @@
     </item>
     <item row="1" column="0">
      <property name="text">
-      <string>0</string>
+      <string>22</string>
      </property>
     </item>
     <item row="2" column="0">
      <property name="text">
-      <string>0</string>
+      <string>33</string>
      </property>
     </item>
     <item row="3" column="0">
      <property name="text">
-      <string>0</string>
+      <string>44</string>
      </property>
     </item>
     <item row="4" column="0">
      <property name="text">
-      <string>0</string>
+      <string>55</string>
      </property>
     </item>
     <item row="5" column="0">
      <property name="text">
-      <string>0</string>
+      <string>66</string>
      </property>
     </item>
     <item row="6" column="0">
      <property name="text">
-      <string>0</string>
+      <string>77</string>
      </property>
     </item>
     <item row="7" column="0">
@@ -650,7 +650,7 @@
     <property name="title">
      <string>Текущие значения:</string>
     </property>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>10</x>

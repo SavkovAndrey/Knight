@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include<QDebug>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -21,15 +22,25 @@ void MainWindow::on_pushButton_clicked()
 {
     QString temp;
        QTableWidgetItem *item = new QTableWidgetItem();
+      // QTableWidgetItem *item;
+    item = ui->tableWidget->item(0, 0);
 
-    item = ui->tableWidget->item(1, 1);
-    if(item != NULL){
+    if(item)
+    {
     temp = item->text();
     }
-
-     // temp = "aaaaaaa";
-     // item->setText("aaaaaaa");
-      ui->tableWidget->setItem(2, 1, item);
+/*
+    item = ui->tableWidget->item(2, 0);
+    if(item)
+    {
+        item->setText(temp);
+    }
+    else
+    {
+         ui->tableWidget->setItem(2, 0, new QTableWidgetItem(temp));
+    }
+*/
+       ui->tableWidget->setItem(2, 0, item);
       ui->label_7->setText(temp);
 
 }
