@@ -18,6 +18,9 @@ void Vassal::setQuantity(int quantity)
 {
     this->quantity = quantity;
     this->cur_price = st_price + (quantity - 1) * ch_price;  // выставляем текущую цену
+    this->sum_attack = attack * quantity;                    // общая атакая
+    this->sum_defense = defense * quantity;                  // общая защита
+    this->sum_income = income * quantity;                    // общий доход
 }
 
 int Vassal::getAttack()
@@ -33,4 +36,19 @@ int Vassal::getDefense()
 int Vassal::getIncome()
 {
     return income;
+}
+
+int Vassal::getSum_attack()
+{
+    return sum_attack;
+}
+
+int Vassal::getSum_defense()
+{
+    return sum_defense;
+}
+
+int Vassal::getSum_income()
+{
+    return sum_income;
 }

@@ -1,6 +1,8 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include "vassal.h"
+
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
@@ -20,5 +22,9 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+
+    std::vector<Vassal> vassal;                 // создал вектор вассалов
+      Vassal poprosh;
+
 };
 #endif // MAINWINDOW_H
