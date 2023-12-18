@@ -1,5 +1,7 @@
 #include "vassal.h"
 
+#include <QtGlobal>
+
 Vassal::Vassal()
 {
 
@@ -14,7 +16,7 @@ Vassal::Vassal(int attack, int defense, int income, int st_price, int ch_price )
     this->ch_price = ch_price;
 }
 
-void Vassal::setQuantity(int quantity)
+void Vassal::setQuantity(qint64 quantity)
 {
     this->quantity = quantity;
     this->cur_price = st_price + (quantity - 1) * ch_price;  // выставляем текущую цену
@@ -48,7 +50,7 @@ int Vassal::getSum_defense()
     return sum_defense;
 }
 
-int Vassal::getSum_income()
+qint64 Vassal::getSum_income()
 {
     return sum_income;
 }
